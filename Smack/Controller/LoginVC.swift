@@ -16,6 +16,12 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // segue to create an account when 'create an account' button is pressed
+    @IBAction func createAccntBtnPressed(_ sender: Any)
+    {
+        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    }
+    
     // close logic VC when button is pressed
     @IBAction func closePressed(_ sender: Any)
     {
